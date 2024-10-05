@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+
+.video-container video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  pointer-events: none;
+}
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  filter: saturate(0);
+  transition: filter .78s ease-in-out;
+}
+.video-container:hover {
+  filter: saturate(1)
+}
+
+.svg-1 {
+  position: absolute;
+  top: 65vh;
+  left: 0;
+  width: 100vw;
+  transform: scaleY(.6);
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: fit-content;
+  margin-top: 5vh;
+  height: 100vh;
+  transition: all .78s ease-in-out;
+}
+
+.text {
+  font-family: "Lexend", sans-serif;
+  font-size: 10vw;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 100%;
+  color: rgba(255, 255, 255, .2);
+  background: linear-gradient(to right, #ffffffb4, #ffffffb4) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  
+  border-bottom: 1px solid #2F2B28;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  transform: translateY(0);
+  opacity: 1;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s, transform 0.78s ease-out, opacity 0.78s ease-out;
+}
+
+.text.in-view {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.text.out-of-view {
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4246ce;
+  color: #0D0D0D;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all ease-in-out .6s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span.exit {
+  transition: all ease-in-out 0.4s;
+}
+
+.text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+.section-3 {
+  width: 100vw;
+  height: 200vh;
+  position: absolute;
+  top: 150vh;
+  background-color: white;
+  transition: all .78s ease-in-out;
+  transform: translateY(600px);
+  opacity: 0;
+}
+
+.section-3 > div {
+  opacity: 0;
+}
+
+.s3-title {
+  font-size: 10vw;
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  font-weight: 800;
+  line-height: 93%;
+  position: absolute;
+  top: 20vh;
+  left: 8.8vw;
+}
+
+.s3-sidebio {
+  font-family: "Lexend", sans-serif;
+  font-size: 1vw;
+  font-weight: 400;
+  position: absolute;
+  top: 85vh;
+  max-width: 17vw;
+  left: 18.3vw;
+}
+
+.s3-bio {
+  font-family: "Lexend", sans-serif;
+  font-size: 2.1vw;
+  font-weight: 400;
+  position: absolute;
+  top: 84.4vh;
+  max-width: 47vw;
+  left: 40vw;
+}
+
+.s3-vid {
+  position: absolute;
+  top: 22vh;
+  right: 14vw;
+}
+
+video {
+  opacity: 1 !important;
+}
+
+.events {
+  width: 100vw;
+  height: 150vh;
+  top: 250vh;
+  position: absolute;
+  left: 0;
+}
+
+
+.events-title {
+  font-size: 2vw;
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  font-weight: 800;
+  line-height: 93%;
+  position: absolute;
+  top: 20vh;
+  left: 18.4vw;
+  opacity: 0;
+}
+
+.evt2 {
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  line-height: 93%;
+  position: absolute;
+  opacity: 0;
+  top: 70vh;
+  left: calc(18.4vw + .7em);
+  font-weight: 800;
+  font-size: 1.4vw;
+}
+.evt2-description {
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  line-height: 120% ;
+  position: absolute;
+  opacity: 0;
+  top: 73vh;
+  left: calc(18.4vw + 2em);
+  font-weight: 200;
+  font-size: 1vw;
+}
+.evt2-container {
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  line-height: 120% ;
+  position: absolute;
+  opacity: 0;
+  top: 80vh;
+  left: calc(18.4vw + 2em);
+  font-weight: 200;
+  background-color: transparent;
+  border: solid 1px black;
+  border-radius: 15px;
+  width: 27vw;
+  height: 50px;
+  font-size: 1vw;
+}
+.evt2-container input {
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  line-height: 120% ;
+  position: absolute;
+  opacity: 1;
+  background-color: transparent;
+  width: 70%;
+  height: 100%;
+  left: 5%;
+  position: relative;
+  border: none !important;
+  outline: none !important;
+  font-weight: 200;
+  font-size: .8vw;
+}
+.evt2-container input:focus,
+.evt2-container input:active {
+  border: none !important;
+  outline: none !important;
+}
+.evt2-btn {
+  position: absolute;
+  background-color: black;
+  width: 22.8%;
+  height: 75%;
+  right: 1%;
+  border-radius: 15px;
+  top: 12.5%;
+  color: white;
+  transition: opacity .78s ease-in-out;
+  opacity: 0;
+}
+
+.evt2-btn p {
+  position: absolute;
+  font-size: .8em;
+  top: -20%;
+  left: calc(50% - 0.8em);
+    transform: scale(1);
+  transition: transform .78s;
+}
+
+.evt2-btn:hover {
+  cursor: pointer;
+  opacity: .7 !important;
+}
+
+.evt2-btn:hover p {
+  transform: scale(1.2);
+}
+
+
+
+
+.events-container {
+  position: absolute;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  left: calc(18.4vw - 1em);
+  opacity: 0;
+  top: 26vh;
+}
+
+.events-container div {
+  width: 22vw;
+  height: 20vw;
+  margin: 1em;
+  transform: scale(.9);
+  filter: grayscale(1);
+  transition: filter .42s ease-in-out, transform 2s cubic-bezier(.13,.49,0,1.01);
+}
+
+.events-container div:hover {
+  transform: scale(1);
+  filter: grayscale(0);
+}
+
+.events-container div:hover img {
+  filter: blur(30px);
+}
+
+.events-container div img {
+  width: 22vw;
+  height: 20vw;
+  filter: blur(0px);
+  transition: filter .42s ease-in-out;
+}
+
+.events-container div canvas {
+  z-index: 1000;
+  position: absolute;
+  width: 22vw !important;
+  height: 20vw !important;
+}
+
+.svg-2 {
+  position: absolute;
+  top: 326vh;
+  left: 0;
+  width: 100vw;
+  transform: scaleY(.6);
+  pointer-events: none;
+}
+
+
+.faq {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 350vh;
+}
+
+.faq-title {
+  font-size: 2vw;
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  font-weight: 800;
+  line-height: 93%;
+  position: absolute;
+  top: 20vh;
+  color: white;
+  left: 18.4vw;
+  opacity: 0;
+}
+.faq-item {
+  width: 14vw;
+  height: 14vw;
+  background-color: rgb(255, 255, 255);
+  margin: 1em;
+}
+.faq-container {
+  position: absolute;
+  top: 24vh;
+  left: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(1000px + 4*2em);
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.row-1, .row-2, .faq-title {
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+.footer {
+  bottom: 0;
+    position: absolute;
+    width: 100vw;
+    height: 43vh;
+    background-color: white;
+}
