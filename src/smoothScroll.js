@@ -95,6 +95,7 @@ Butter.prototype = {
       //Check if the ".navbar" element is available in the DOM
       if (document.querySelector(".Preloader")) {
         document.querySelector(".Preloader").style.transform = `${movementFixedElements}`;
+        document.querySelector(".header").style.transform = `${movementFixedElements}`;
       }
       //var navbarElement = document.querySelector(".bg");
       //if (navbarElement) {

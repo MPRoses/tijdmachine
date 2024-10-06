@@ -22,7 +22,9 @@ import faq8 from './faq8.png';
 
 import contact from './contact.png';
 import socials from './socials.png';
-import Preloader from './Preloader.js';
+import Preloader from './Preload.js'
+
+import vid2 from './Vid2.mp4'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -419,7 +421,7 @@ $("span").on("mouseenter", (e) => {
     <div className="App">
       <div className="video-container">
         <video id="myVideo" autoPlay loop muted>
-          <source src="https://github.com/MPRoses/tijdmachine/raw/refs/heads/master/Vid2.mp4" type="video/mp4" />
+          <source src={vid2} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

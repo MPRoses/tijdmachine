@@ -593,8 +593,7 @@ top: -37%;
 }
 
 
-@media (max-width: 700px) and (min-height: 0px) and (max-height: 900px) {
-
+@media (max-width: 700px) and (min-height: 0px) and (max-height: 949px) {
 
   .evt2 {
     top: 150vh;
@@ -630,7 +629,45 @@ top: -37%;
 
   body, #root {
     height: calc(475vh + 8*60vw + 8*2vw) !important;
+  }
+
+
+.header p {
+  font-family: "Just Me Again Down Here", sans-serif;
+  font-size: 8vw !important;
+  color: white;
+  position: absolute;
+  top: -20% !important;
+  left: 5vw;
 }
+
+.btn-container {
+  width: 30vw !important;
+  height: 4.5vh;
+  background-color: white;
+  position: absolute;
+  right: 5vw;
+  top: 28%;
+  border-radius: 50px;
+  transition: background-color .46s ease-in-out;
+}
+
+.btn-container:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-container p {
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  font-size: 3.5vw !important;
+  color: black;
+  position: absolute;
+  top: -8% !important;
+  left: 15%;
+}
+
+
+
 
 }
 
