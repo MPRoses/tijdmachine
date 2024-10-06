@@ -25,6 +25,7 @@
   left: 0;
   width: 100vw;
   transform: scaleY(.6);
+  z-index: 5;
 }
 
 .container-text {
@@ -33,9 +34,12 @@
   justify-content: center;
   align-items: flex-start;
   height: fit-content;
-  margin-top: 5vh;
   height: 100vh;
   transition: all .78s ease-in-out;
+  position: absolute;
+  background-color: black;
+  width: 100vw;
+  z-index: 5;
 }
 
 .text {
@@ -214,7 +218,7 @@ video {
   border: solid 1px black;
   border-radius: 15px;
   width: 27vw;
-  height: 50px;
+  height: 2.6vw;
   font-size: 1vw;
 }
 .evt2-container input {
@@ -349,7 +353,24 @@ video {
   width: 14vw;
   height: 14vw;
   background-color: rgb(255, 255, 255);
-  margin: 1em;
+  margin: 1vw;
+}
+
+.faq-item:hover {
+  z-index: 10;
+}
+
+.faq-item:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.faq-item img {
+  width: 14vw;
+  height: 14vw;
+  filter: grayscale(1);
+  transform: scale(1);
+  transition: filter .42s ease-in-out, transform 2s cubic-bezier(.13,.49,0,1.01);
 }
 .faq-container {
   position: absolute;
@@ -357,7 +378,7 @@ video {
   left: 20vw;
   display: flex;
   flex-wrap: wrap;
-  max-width: calc(1000px + 4*2em);
+  max-width: calc(56vw + 4*2vw);
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
@@ -374,4 +395,327 @@ video {
     width: 100vw;
     height: 43vh;
     background-color: white;
+}
+
+.footer-title {
+  font-size: 1.3vw;
+  font-family: "Lexend", "Lexend", sans-serif;
+  font-weight: 800;
+  line-height: 93%;
+  position: absolute;
+  color: black;
+  opacity: 1;
+  top: 3vh;
+}
+
+.ft1 {
+  left: 3vw;
+}
+
+.ft2 {
+  right: 30vw;
+}
+.ft3 {
+  right: 5vw;
+}
+
+.footer-contact {
+  width: 10vw;
+  position: absolute;
+  top: 10vh;
+  right: 25.5vw
+}
+
+.footer-socials {
+  width: 10vw;
+  position: absolute;
+  top: 10vh;
+  right: 4.1vw
+}
+
+
+@media (max-width: 1000px) {
+  #myVideo {
+    width: unset;
+  }
+
+  .svg-1 {
+    display: none;
+  }
+
+  .text {
+    font-size: 25vw;
+  }
+
+  span {
+    display: none;
+  }
+
+  .section-3  {
+    height: 265vh;
+  }
+
+  .s3-vid {
+    top: 10vh;
+    right: 2vw;
+    left: 13vw;
+  }
+
+  .s3-bio {
+    display: none;
+  }
+
+  .s3-title {
+    top: 35vh;
+  }
+
+  .s3-sidebio {
+    left: 10vw;
+    font-size: 7vw;
+    top: 52vh;
+    max-width: 80vw;
+  }
+
+  .events-title {
+    top: 0;
+    font-size: 8vw;
+    left: 8.8vw;
+  }
+
+  .events-container {
+    top: 8vh;
+    left: 0;
+  }
+  .events-container div {
+    width: 90vw;
+    height: 90vw;
+  }
+  .events-container div img {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .events-container div canvas {
+    width: 90vw !important;
+    height: 90vw !important;
+  }
+
+  body, #root {
+    height: 700vh !important;
+}
+
+.svg-2 {
+  display: none;
+}
+
+.evt2 {
+  top: 145vh;
+  font-size: 4vw;
+  left: 10vw;
+}
+
+.evt2-description {
+  top: 147.5vh;
+  font-size: 3vw;
+  max-width: 90vw;
+  left: 10vw;
+}
+
+.evt2-container {
+  top: 152vh;
+  left: 10vw;
+  width: 80vw;
+  height: 6vw;
+  font-size: 3vw;
+}
+
+.evt2-container input {
+  font-size: 2.6vw;
+}
+
+.evt2-btn p {
+top: -37%;
+}
+
+.faq {
+  top: 400vh;
+  pointer-events: none;
+}
+
+.faq-title {
+  font-size: 10vw;
+  top: 18vh;
+}
+.faq-container {
+  top: 26vh;
+}
+.faq-item {
+  width: 90vw;
+  pointer-events: all;
+  height: 60vw !important;
+}
+
+.faq-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-title {
+  font-size: 4vw;
+  left: 5vw;
+}
+
+.ft1 {
+  font-size: 7vw;
+  top: 2.5vw;
+}
+
+.ft2 {
+  top: 10vh;
+}
+
+.ft3 {
+  top: 30vh;
+}
+
+.footer-contact {
+  top: 16vh;
+  width: 50vw;
+  left: 5vw;
+}
+
+.footer-socials {
+  width: 40vw;
+  top: 35vh;
+  left: 5vw;
+}
+
+}
+
+
+@media (max-width: 700px) and (min-height: 0px) and (max-height: 900px) {
+
+
+  .evt2 {
+    top: 150vh;
+  }
+  
+  .evt2-description {
+    top: 152.5vh;
+  }
+  
+  .evt2-container {
+    top: 157vh;
+  }
+
+  .events-container {
+    left: 5vw;
+  }
+
+  .events-container div {
+    width: 90vw;
+    height: calc(70vw + 13.5vh);
+    margin: 0;
+  }
+  .events-container div img {
+    width: 90vw;
+    height: calc(70vw +  13.5vh );
+  }
+
+  .events-container div canvas {
+    width: 90vw !important;
+    height: calc(70vw + 13.5vh) !important;
+  }
+
+
+  body, #root {
+    height: calc(475vh + 8*60vw + 8*2vw) !important;
+}
+
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity .47s ease-in-out;
+}
+
+.header p {
+  font-family: "Just Me Again Down Here", sans-serif;
+  font-size: 2vw;
+  color: white;
+  position: absolute;
+  top: -25%;
+  left: 5vw;
+}
+
+.btn-container {
+  width: 6vw;
+  height: 4.5vh;
+  background-color: white;
+  position: absolute;
+  right: 5vw;
+  top: 28%;
+  border-radius: 50px;
+  transition: background-color .46s ease-in-out;
+}
+
+.btn-container:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-container p {
+  font-family: "Lexend Exa", "Lexend", sans-serif;
+  font-size: .7vw;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 15%;
+}
+
+.btn-container div {
+  position: absolute;
+  right: 15%;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+  top: calc(50% - 5px);
+}
+.header-bg {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+
+}
+
+.Preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index:32132131232;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 1.5s cubic-bezier(.13,.49,0,1.01);
+}
+
+.Preloader img {
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+  position: absolute;
+  top: calc(50% - 0.5*40px);
+  left: calc(50% - 0.5*40px);
+  opacity: 0;
+  transition: opacity .78s ease-in-out, transform 1.5s cubic-bezier(.13,.49,0,1.01);
 }

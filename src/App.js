@@ -11,11 +11,45 @@ import item1 from './event_1.png';
 import item2 from './event_2.png';
 import item3 from './event_3.png';
 
+import faq1 from './faq1.png';
+import faq2 from './faq2.png';
+import faq3 from './faq3.png';
+import faq4 from './faq4.png';
+import faq5 from './faq5.png';
+import faq6 from './faq6.png';
+import faq7 from './faq7.png';
+import faq8 from './faq8.png';
+
+import contact from './contact.png';
+import socials from './socials.png';
+import Preloader from './Preloader.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   useEffect(() => {
+
+    function checkWidth() {
+      var containerText = document.querySelector('.container-text');
+      var texts = containerText.querySelectorAll('.text');
+    
+      texts.forEach(function(text) {
+        if (window.innerWidth < 1000) {
+          text.innerHTML = text.innerHTML.replace(/&nbsp;&nbsp;/g, '');
+        } else {
+          if (!text.innerHTML.includes('&nbsp;&nbsp;')) {
+            text.innerHTML = text.innerHTML.replace(/TOP/g, '&nbsp;&nbsp;TOP');
+          }
+        }
+      });
+    }
+    
+    // Check width on initial load
+    checkWidth();
+    
+    // Check width on resize
+    window.addEventListener('resize', checkWidth);
+    
 
     //
 
@@ -215,6 +249,10 @@ $("span").on("mouseenter", (e) => {
         });
       }
 
+      $(".btn-container").on("click", () => {
+          window.scrollTo({top: windowHeight*2.6, behavior: 'smooth'});
+      })
+
       var startScroll2 = windowHeight*2;
       var endScroll2 = windowHeight * 3.5;
 
@@ -289,6 +327,12 @@ $("span").on("mouseenter", (e) => {
           delay: anime.stagger(150)
         });
         }
+      }
+
+      if (scrollTop/windowHeight > 1) {
+        $(".header").css("opacity", "0");
+      }   else {
+        $(".header").css("opacity", "1");
       }
 
 
@@ -431,19 +475,53 @@ $("span").on("mouseenter", (e) => {
       <div className="faq">
         <div className="faq-title ">FAQ</div>
         <div className="faq-container">
-          <div className="faq-item row-1 "></div>
-          <div className="faq-item row-1 "></div>
-          <div className="faq-item row-1 "></div>
-          <div className="faq-item row-1 "></div>
-          <div className="faq-item row-2 "></div>
-          <div className="faq-item row-2 "></div>
-          <div className="faq-item row-2 "></div>
-          <div className="faq-item row-2 "></div>
+          <div className="faq-item row-1 ">
+            <img src={faq1} alt="faq 1" />
+          </div>
+          <div className="faq-item row-1 ">
+            <img src={faq2} alt="faq 2" />
+          </div>
+          <div className="faq-item row-1 ">
+            <img src={faq3} alt="faq 3" />
+          </div>
+          <div className="faq-item row-1 ">
+            <img src={faq4} alt="faq 4" />
+          </div>
+          <div className="faq-item row-2 ">
+            <img src={faq5} alt="faq 5" />
+          </div>
+          <div className="faq-item row-2 ">
+            <img src={faq6} alt="faq 6" />
+          </div>
+          <div className="faq-item row-2 ">
+            <img src={faq7} alt="faq 7" />
+          </div>
+          <div className="faq-item row-2 ">
+            <img src={faq8} alt="faq 8" />
+          </div>
         </div>
       </div>
       <div className="footer">
-
+        <p className="footer-title ft1">De Tijdmachine</p>
+        <p className="footer-title ft2">Contact</p>
+        <img src={contact} className="footer-contact" alt="contact" />
+        <p className="footer-title ft3">Social Media</p>
+        <img src={socials} className="footer-socials" alt="contact" />
       </div>
+
+      <div className="header">
+        <p>De Tijdmachine</p>
+        <div className="btn-container">
+          <p>EVENTS</p>
+          <div></div>
+        </div>
+        <div className="header-bg">
+
+        </div>
+      </div>
+
+      <Preloader />
+
     </div>
   );
 }

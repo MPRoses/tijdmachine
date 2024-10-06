@@ -89,10 +89,13 @@ Butter.prototype = {
       var scrollY = (document.scrollingElement !== undefined) ? document.scrollingElement.scrollTop : (document.documentElement.scrollTop || 0.0);
       this.wrapperOffset += (scrollY - this.wrapperOffset) * this.wrapperDamper;
       var movementContainer = 'translate3d(0,' + (-this.wrapperOffset.toFixed(2)) + 'px, 0)';
-      //var movementFixedElements = 'translate3d(0,' + (this.wrapperOffset.toFixed(2)) + 'px, 0)';
+      var movementFixedElements = 'translate3d(0,' + (this.wrapperOffset.toFixed(2)) + 'px, 0)';
       this.wrapper.style.transform = `${movementContainer}` // WORKS
   
       //Check if the ".navbar" element is available in the DOM
+      if (document.querySelector(".Preloader")) {
+        document.querySelector(".Preloader").style.transform = `${movementFixedElements}`;
+      }
       //var navbarElement = document.querySelector(".bg");
       //if (navbarElement) {
         //document.querySelector(".bg").style.transform = `${movementFixedElements}`;
