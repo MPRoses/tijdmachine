@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.c84c4245.css",
-    "main.js": "/static/js/main.694a1f1c.js",
-    "static/js/453.0279817d.chunk.js": "/static/js/453.0279817d.chunk.js",
-    "static/media/event_3.png": "/static/media/event_3.9b083b0619c3b50d956c.png",
-    "static/media/event_1.png": "/static/media/event_1.69aa11115532c337de44.png",
-    "static/media/event_2.png": "/static/media/event_2.6c084a1f163466727a9e.png",
-    "static/media/faq7.png": "/static/media/faq7.7d147332a59da18aca3e.png",
-    "static/media/faq8.png": "/static/media/faq8.585a3e98bd9076afbb27.png",
-    "static/media/faq6.png": "/static/media/faq6.c00be659c6b0c927b21f.png",
-    "static/media/faq2.png": "/static/media/faq2.63e4c111e1035f45ff7a.png",
-    "static/media/faq5.png": "/static/media/faq5.85fd9f2ce94c61597c97.png",
-    "static/media/faq3.png": "/static/media/faq3.30c9e323db3be933304f.png",
-    "static/media/faq1.png": "/static/media/faq1.b261d6e3ad45cfbb1d98.png",
-    "static/media/faq4.png": "/static/media/faq4.b8c31d313595095fb0aa.png",
-    "static/media/vid.mp4": "/static/media/vid.1ddf746cbaedb445b555.mp4",
-    "static/media/contact.png": "/static/media/contact.4e73b59e5b46f0fc4f61.png",
-    "static/media/load.png": "/static/media/load.a1ed5ada83200ec8927e.png",
-    "index.html": "/index.html",
-    "main.c84c4245.css.map": "/static/css/main.c84c4245.css.map",
-    "main.694a1f1c.js.map": "/static/js/main.694a1f1c.js.map",
-    "453.0279817d.chunk.js.map": "/static/js/453.0279817d.chunk.js.map"
+    "main.css": "/tijdmachine/static/css/main.d1a90cfe.css",
+    "main.js": "/tijdmachine/static/js/main.26d3f347.js",
+    "static/js/453.0279817d.chunk.js": "/tijdmachine/static/js/453.0279817d.chunk.js",
+    "static/media/Vid2.mp4": "/tijdmachine/static/media/Vid2.11a739ca61696613d9da.mp4",
+    "static/media/event_3.png": "/tijdmachine/static/media/event_3.9b083b0619c3b50d956c.png",
+    "static/media/event_1.png": "/tijdmachine/static/media/event_1.69aa11115532c337de44.png",
+    "static/media/event_2.png": "/tijdmachine/static/media/event_2.6c084a1f163466727a9e.png",
+    "static/media/faq7.png": "/tijdmachine/static/media/faq7.7d147332a59da18aca3e.png",
+    "static/media/faq8.png": "/tijdmachine/static/media/faq8.585a3e98bd9076afbb27.png",
+    "static/media/faq6.png": "/tijdmachine/static/media/faq6.c00be659c6b0c927b21f.png",
+    "static/media/faq2.png": "/tijdmachine/static/media/faq2.63e4c111e1035f45ff7a.png",
+    "static/media/faq5.png": "/tijdmachine/static/media/faq5.85fd9f2ce94c61597c97.png",
+    "static/media/faq3.png": "/tijdmachine/static/media/faq3.30c9e323db3be933304f.png",
+    "static/media/faq1.png": "/tijdmachine/static/media/faq1.b261d6e3ad45cfbb1d98.png",
+    "static/media/faq4.png": "/tijdmachine/static/media/faq4.b8c31d313595095fb0aa.png",
+    "static/media/vid.mp4": "/tijdmachine/static/media/vid.1ddf746cbaedb445b555.mp4",
+    "static/media/contact.png": "/tijdmachine/static/media/contact.4e73b59e5b46f0fc4f61.png",
+    "static/media/load.png": "/tijdmachine/static/media/load.a1ed5ada83200ec8927e.png",
+    "index.html": "/tijdmachine/index.html",
+    "main.d1a90cfe.css.map": "/tijdmachine/static/css/main.d1a90cfe.css.map",
+    "main.26d3f347.js.map": "/tijdmachine/static/js/main.26d3f347.js.map",
+    "453.0279817d.chunk.js.map": "/tijdmachine/static/js/453.0279817d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c84c4245.css",
-    "static/js/main.694a1f1c.js"
+    "static/css/main.d1a90cfe.css",
+    "static/js/main.26d3f347.js"
   ]
 }
